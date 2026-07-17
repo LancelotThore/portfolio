@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-instrument-serif);
+  --font-grotesk: var(--font-space-grotesk);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  /* Light surfaces */
+  --color-cream: #faf8f4;
+  --color-cream-hover: #f3f0e9;
+
+  /* Text on light */
+  --color-ink: #141412;
+  --color-ink-soft: #55524a;
+  --color-ink-muted: #6d6a63;
+
+  /* Dividers */
+  --color-divider: #d8d4cc;
+  --color-divider-dark: #3a3936;
+
+  /* Text on dark (inverted contact section) */
+  --color-cream-muted: #8a867c;
+  --color-cream-soft: #b8b4aa;
+
+  /* Type scale (from the design spec, 1rem = 16px) */
+  --text-hero: 6.5rem; /* 104px — home H1 */
+  --text-hero--line-height: 1;
+  --text-hero-sm: 5.25rem; /* 84px — secondary page H1 */
+  --text-hero-sm--line-height: 1.02;
+  --text-contact: 4.5rem; /* 72px — contact heading */
+  --text-contact--line-height: 1.05;
+  --text-section: 3.25rem; /* 52px — section H2 */
+  --text-section--line-height: 1.1;
+  --text-lede: 1.875rem; /* 30px — hero italic subtitle */
+  --text-lede--line-height: 1.4;
+  --text-lede-sm: 1.625rem; /* 26px — secondary italic subtitle */
+  --text-lede-sm--line-height: 1.45;
+  --text-project: 2rem; /* 32px — project title */
+  --text-project--line-height: 1.15;
+  --text-project-sm: 1.875rem; /* 30px — project title, list page */
+  --text-project-sm--line-height: 1.15;
+  --text-entry: 1.75rem; /* 28px — experience/education entry title */
+  --text-entry--line-height: 1.2;
+  --text-list: 1.0625rem; /* 17px — skills lists */
+  --text-list--line-height: 1.8;
+  --text-body: 0.9375rem; /* 15px — descriptions, nav, buttons */
+  --text-body--line-height: 1.6;
+  --text-meta: 0.875rem; /* 14px — meta lines, notes */
+  --text-meta--line-height: 1.5;
+  --text-label: 0.8125rem; /* 13px — uppercase labels, stacks, footer */
+  --text-label--line-height: 1.4;
+  --text-label--letter-spacing: 0.14em;
+
+  /* Hero entrance animation */
+  --animate-fade-up: fade-up 0.7s ease both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-cream font-serif text-ink;
 }
