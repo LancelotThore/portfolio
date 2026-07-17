@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "title": "Lancelot Thoré — Full-stack web developer",
+    "description": "Portfolio of Lancelot Thoré, full-stack web developer looking for an apprenticeship — Orléans, France."
+  },
+  "hero": {
+    "kicker": "Full-stack web developer — Orléans, France"
+  },
+  "localeSwitcher": {
+    "ariaLabel": "Switch to the French version"
+  }
+}
