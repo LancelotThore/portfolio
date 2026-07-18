@@ -16,10 +16,28 @@ export async function generateMetadata({
 }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "projectsPage" });
+  const title = t("metaTitle");
+  const description = t("subtitle");
+  const path = locale === "fr" ? "/projets" : "/en/projets";
 
   return {
-    title: t("metaTitle"),
-    description: t("subtitle"),
+    title,
+    description,
+    alternates: {
+      languages: {
+        fr: "/projets",
+        en: "/en/projets",
+        "x-default": "/projets",
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: path,
+      siteName: "Lancelot Thoré",
+      locale: locale === "fr" ? "fr_FR" : "en_US",
+      type: "website",
+    },
   };
 }
 
