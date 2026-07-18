@@ -1,0 +1,89 @@
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import Header from "@/components/header";
+import ProjectRow from "@/components/project-row";
+import { projects, type ProjectGroup } from "@/data/projects";
+import { Link } from "@/i18n/navigation";
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+const groupOrder: ProjectGroup[] = ["formation", "personal", "company"];
+
+export async function generateMetadata({
+  params,
+}: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "projectsPage" });
+
+  return {
+    title: t("metaTitle"),
+    description: t("subtitle"),
+  };
+}
+
+export default async function ProjectsPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("projectsPage");
+  const nav = await getTranslations("nav");
+
+  return (
+    <>
+      <Header variant="projects" />
+
+      <main className="px-6 pt-16 pb-8 md:px-16 md:pt-24 md:pb-14">
+        <h1 className="text-hero-sm">{t("heading")}</h1>
+        <p className="mt-6 max-w-160 text-xl leading-normal font-serif italic md:text-lede-sm">
+          {t("subtitle")}
+        </p>
+      </main>
+
+      {groupOrder.map((group) => {
+        const groupProjects = projects.filter((p) => p.group === group);
+
+        return (
+          <div key={group} className="border-t border-ink p-6 md:p-16">
+            <p className="mb-8 font-grotesk text-label text-ink-muted uppercase">
+              {t(`groups.${group}`)}
+            </p>
+            <div className="flex flex-col border-b border-divider">
+              {groupProjects.map((project) => (
+                <ProjectRow
+                  key={project.slug}
+                  size="list"
+                  index={String(project.year)}
+                  title={t(`items.${project.slug}.title`)}
+                  description={t(`items.${project.slug}.description`)}
+                  stack={project.stack}
+                  href={project.href}
+                  externalLinkLabel={t("externalLinkLabel")}
+                />
+              ))}
+            </div>
+            {group === "company" && (
+              <p className="mt-7 font-grotesk text-meta text-ink-muted">
+                {t("companyNote")}
+              </p>
+            )}
+          </div>
+        );
+      })}
+
+      <footer className="flex flex-col items-start gap-4 border-t border-ink bg-ink px-6 py-8 text-cream sm:flex-row sm:items-center sm:justify-between md:px-16 md:py-12">
+        <Link href="/" className="font-grotesk text-body">
+          {nav("backToPortfolio")}
+        </Link>
+        <div className="flex gap-6 font-grotesk text-meta">
+          <a href="mailto:lancelot.thore@gmail.com">
+            lancelot.thore@gmail.com
+          </a>
+          <a href="https://github.com/LancelotThore">
+            {t("githubLabel")}
+          </a>
+        </div>
+      </footer>
+    </>
+  );
+}
