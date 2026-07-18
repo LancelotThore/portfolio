@@ -3,6 +3,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Instrument_Serif, Space_Grotesk } from "next/font/google";
 import { notFound } from "next/navigation";
+import Header from "@/components/header";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
@@ -52,7 +53,10 @@ export default async function LocaleLayout({ children, params }: Props) {
       className={`${instrumentSerif.variable} ${spaceGrotesk.variable} scroll-smooth antialiased`}
     >
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Header />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
