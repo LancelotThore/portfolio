@@ -5,6 +5,7 @@ type Props = {
   stack: string[];
   href?: string;
   externalLinkLabel?: string;
+  size?: "featured" | "list";
 };
 
 export default function ProjectRow({
@@ -14,15 +15,19 @@ export default function ProjectRow({
   stack,
   href,
   externalLinkLabel,
+  size = "featured",
 }: Props) {
-  const rowClassName =
-    "grid grid-cols-1 gap-2 border-t border-divider py-7.5 transition-colors hover:bg-cream-hover md:grid-project-row md:items-baseline md:gap-8";
+  const gridClass =
+    size === "list" ? "md:grid-project-row-compact" : "md:grid-project-row";
+  const titleClass = size === "list" ? "text-project-sm" : "text-project";
+
+  const rowClassName = `grid grid-cols-1 gap-2 border-t border-divider py-7.5 transition-colors hover:bg-cream-hover md:items-baseline md:gap-8 ${gridClass}`;
 
   const content = (
     <>
       <span className="font-grotesk text-label text-ink-muted">{index}</span>
       <div>
-        <p className="text-project">
+        <p className={titleClass}>
           {title}
           {href && (
             <span
