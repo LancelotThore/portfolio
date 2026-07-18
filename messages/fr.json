@@ -4,7 +4,64 @@
     "description": "Portfolio de Lancelot Thoré, développeur web full-stack en recherche d'alternance — Orléans, France."
   },
   "hero": {
-    "kicker": "Développeur web full-stack — Orléans, France"
+    "kicker": "Développeur web full-stack — Orléans, France",
+    "subtitle": "Étudiant en Master Architecture & Développement d'application à CODA Orléans, je recherche une alternance pour concevoir des applications web utiles et soignées — du prototype Figma au déploiement.",
+    "ctaContact": "Me contacter",
+    "ctaProjects": "Voir mes projets",
+    "availability": "Disponible en alternance — rythme 1 semaine école / 3 semaines entreprise"
+  },
+  "projects": {
+    "heading": "Projets",
+    "note": "D'autres réalisations (application embarquée Python, sites CMS, prototypes Figma) ont été menées en entreprise chez Groupe Axenco — détails sur demande.",
+    "cta": "Tous les projets →",
+    "externalLinkLabel": "ouvre GitHub dans un nouvel onglet",
+    "items": {
+      "dispoIntervenants": {
+        "title": "Disponibilités des intervenants",
+        "description": "Application de gestion des disponibilités d'intervenants universitaires : saisie par clé d'accès, dashboard d'administration, import/export JSON. Développement itératif en 21 itérations."
+      },
+      "nintendo": {
+        "title": "Reproduction d'une page produit Nintendo",
+        "description": "Intégration au pixel près de la page Stardew Valley du store Nintendo, responsive desktop / tablette / mobile. Exercice de précision front-end à but pédagogique."
+      }
+    }
+  },
+  "background": {
+    "experienceHeading": "Expériences",
+    "educationHeading": "Formation",
+    "experience": {
+      "axencoAlternance": {
+        "title": "Alternance — Développeur web full-stack",
+        "description": "Développement de sites en CMS (WordPress, SPIP), prototypage d'une application web avec Figma, développement d'une application embarquée en Python (PySide6)."
+      },
+      "axencoStage": {
+        "title": "Stage — Développeur web full-stack",
+        "description": "Développement et maintenance d'applications web, rédaction de documentation technique, suivi agile."
+      }
+    },
+    "education": {
+      "coda": { "meta": "École CODA, Orléans — 2025 → aujourd'hui" },
+      "mmi": {
+        "meta": "Université de Limoges — 2022 · 2025 — parcours développement web & dispositifs interactifs"
+      },
+      "bac": { "meta": "2021 · 2022 — mention assez bien" }
+    }
+  },
+  "skills": {
+    "heading": "Compétences",
+    "categories": {
+      "databases": { "label": "Bases de données" },
+      "tools": { "label": "Outils" }
+    },
+    "languagesSpoken": {
+      "french": "Français — natif",
+      "english": "Anglais — B2",
+      "italian": "Italien — A2"
+    }
+  },
+  "contact": {
+    "heading": "Travaillons ensemble.",
+    "subtitle": "Je recherche une alternance en développement web full-stack à partir de la rentrée 2026."
   },
   "nav": {
     "projects": "Projets",
