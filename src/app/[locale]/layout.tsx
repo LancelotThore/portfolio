@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Instrument_Serif, Space_Grotesk } from "next/font/google";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { siteUrl } from "@/lib/site";
 import "../globals.css";
 
 const instrumentSerif = Instrument_Serif({
@@ -32,10 +33,25 @@ export async function generateMetadata({
 }: Omit<Props, "children">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
+  const title = t("title");
+  const description = t("description");
+  const path = locale === "fr" ? "/" : "/en";
 
   return {
-    title: t("title"),
-    description: t("description"),
+    metadataBase: new URL(siteUrl),
+    title,
+    description,
+    alternates: {
+      languages: { fr: "/", en: "/en", "x-default": "/" },
+    },
+    openGraph: {
+      title,
+      description,
+      url: path,
+      siteName: "Lancelot Thoré",
+      locale: locale === "fr" ? "fr_FR" : "en_US",
+      type: "website",
+    },
   };
 }
 
