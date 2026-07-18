@@ -63,12 +63,64 @@
     "heading": "Travaillons ensemble.",
     "subtitle": "Je recherche une alternance en développement web full-stack à partir de la rentrée 2026."
   },
+  "projectsPage": {
+    "metaTitle": "Tous les projets — Lancelot Thoré",
+    "heading": "Tous les projets",
+    "subtitle": "Projets de formation, projets personnels et réalisations en entreprise, de 2022 à aujourd'hui.",
+    "groups": {
+      "formation": "Projets de formation — BUT MMI, Université de Limoges",
+      "personal": "Projets personnels",
+      "company": "En entreprise — Groupe Axenco"
+    },
+    "companyNote": "Projets réalisés en entreprise — code et visuels non publics, présentation détaillée possible en entretien.",
+    "githubLabel": "GitHub ↗",
+    "externalLinkLabel": "ouvre GitHub dans un nouvel onglet",
+    "items": {
+      "lAgendary": {
+        "title": "L'Agendary",
+        "description": "Application web de gestion d'événements en groupe : calendrier personnel, recherche filtrée, authentification JWT, backoffice, événements privés avec invitation par email."
+      },
+      "dispoIntervenants": {
+        "title": "Disponibilités des intervenants",
+        "description": "Gestion des disponibilités d'intervenants universitaires : accès par clé, dashboard d'administration, import/export JSON. Développement itératif (21 itérations)."
+      },
+      "nintendo": {
+        "title": "Reproduction d'une page produit Nintendo",
+        "description": "Intégration au pixel près de la page Stardew Valley du store Nintendo, responsive desktop / tablette / mobile. Exercice de précision front-end."
+      },
+      "robinLeRequin": {
+        "title": "M'T Dents — Robin le requin",
+        "description": "Application éducative pour enfants de 3 à 6 ans : chronomètre de brossage, fiches pédagogiques, quiz interactif. Développée à partir de maquettes Figma, pensée tablette et mobile."
+      },
+      "ecoQuest": {
+        "title": "Eco-Quest",
+        "description": "Jeu VR en trinôme sur une île déserte : collecter les déchets pour terminer chaque niveau, au service d'un message écologique."
+      },
+      "tsudoi": {
+        "title": "Tsudoi (集い)",
+        "description": "Tracker de lecture de mangas entre amis : journal de lectures, micro-critiques, découvertes via son cercle. En cours de développement."
+      },
+      "irminsul": {
+        "title": "Irminsul",
+        "description": "Bot Discord d'informations et de builds pour Genshin Impact : commandes slash, synchronisation de données, tests automatisés et linting."
+      },
+      "axencoDomotique": {
+        "title": "Application embarquée domotique",
+        "description": "Interface embarquée conçue et développée en alternance, du prototypage Figma à l'intégration."
+      },
+      "axencoCms": {
+        "title": "Sites vitrines multi-CMS",
+        "description": "Développement et maintenance de sites web pour le groupe et ses marques."
+      }
+    }
+  },
   "nav": {
     "projects": "Projets",
     "background": "Parcours",
     "skills": "Compétences",
     "contact": "Contact",
-    "menuLabel": "Menu"
+    "menuLabel": "Menu",
+    "backToPortfolio": "← Retour au portfolio"
   },
   "localeSwitcher": {
     "ariaLabel": "Passer à la version anglaise"
