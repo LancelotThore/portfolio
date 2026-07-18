@@ -6,6 +6,13 @@
   "hero": {
     "kicker": "Développeur web full-stack — Orléans, France"
   },
+  "nav": {
+    "projects": "Projets",
+    "background": "Parcours",
+    "skills": "Compétences",
+    "contact": "Contact",
+    "menuLabel": "Menu"
+  },
   "localeSwitcher": {
     "ariaLabel": "Passer à la version anglaise"
   }
