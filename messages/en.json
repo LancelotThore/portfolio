@@ -4,7 +4,64 @@
     "description": "Portfolio of Lancelot Thoré, full-stack web developer looking for an apprenticeship — Orléans, France."
   },
   "hero": {
-    "kicker": "Full-stack web developer — Orléans, France"
+    "kicker": "Full-stack web developer — Orléans, France",
+    "subtitle": "Master's student in Software Architecture & Application Development at CODA Orléans, looking for an apprenticeship to build useful, well-crafted web applications — from Figma prototype to deployment.",
+    "ctaContact": "Get in touch",
+    "ctaProjects": "View projects",
+    "availability": "Available for apprenticeship — 1 week school / 3 weeks in company"
+  },
+  "projects": {
+    "heading": "Projects",
+    "note": "Other work (embedded Python app, CMS websites, Figma prototypes) was carried out in-company at Groupe Axenco — details on request.",
+    "cta": "All projects →",
+    "externalLinkLabel": "opens GitHub in a new tab",
+    "items": {
+      "dispoIntervenants": {
+        "title": "Lecturer availability manager",
+        "description": "Availability management app for university lecturers: key-based access, admin dashboard, JSON import/export. Built iteratively across 21 iterations."
+      },
+      "nintendo": {
+        "title": "Nintendo product page recreation",
+        "description": "Pixel-perfect recreation of the Stardew Valley page from the Nintendo store, responsive across desktop / tablet / mobile. A front-end precision exercise for study purposes."
+      }
+    }
+  },
+  "background": {
+    "experienceHeading": "Experience",
+    "educationHeading": "Education",
+    "experience": {
+      "axencoAlternance": {
+        "title": "Apprenticeship — Full-stack web developer",
+        "description": "CMS website development (WordPress, SPIP), web app prototyping in Figma, embedded application development in Python (PySide6)."
+      },
+      "axencoStage": {
+        "title": "Internship — Full-stack web developer",
+        "description": "Web application development and maintenance, technical documentation, agile workflow."
+      }
+    },
+    "education": {
+      "coda": { "meta": "CODA School, Orléans — 2025 → present" },
+      "mmi": {
+        "meta": "University of Limoges — 2022 · 2025 — web development & interactive media track"
+      },
+      "bac": { "meta": "2021 · 2022 — with honours" }
+    }
+  },
+  "skills": {
+    "heading": "Skills",
+    "categories": {
+      "databases": { "label": "Databases" },
+      "tools": { "label": "Tools" }
+    },
+    "languagesSpoken": {
+      "french": "French — native",
+      "english": "English — B2",
+      "italian": "Italian — A2"
+    }
+  },
+  "contact": {
+    "heading": "Let's work together.",
+    "subtitle": "I'm looking for a full-stack web development apprenticeship starting autumn 2026."
   },
   "nav": {
     "projects": "Projects",
