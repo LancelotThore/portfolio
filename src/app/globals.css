@@ -23,9 +23,15 @@
   --color-cream-muted: #8a867c;
   --color-cream-soft: #b8b4aa;
 
+  /* Letter-spacing (from the design spec) */
+  --tracking-logo: 0.08em; /* "LT" wordmark */
+  --tracking-label: 0.14em; /* uppercase labels and kicker */
+
   /* Type scale (from the design spec, 1rem = 16px) */
   --text-hero: 6.5rem; /* 104px — home H1 */
   --text-hero--line-height: 1;
+  --text-hero-mobile: 3.5rem; /* 56px — home H1 below md */
+  --text-hero-mobile--line-height: 1.05;
   --text-hero-sm: 5.25rem; /* 84px — secondary page H1 */
   --text-hero-sm--line-height: 1.02;
   --text-contact: 4.5rem; /* 72px — contact heading */
@@ -50,7 +56,7 @@
   --text-meta--line-height: 1.5;
   --text-label: 0.8125rem; /* 13px — uppercase labels, stacks, footer */
   --text-label--line-height: 1.4;
-  --text-label--letter-spacing: 0.14em;
+  --text-label--letter-spacing: var(--tracking-label);
 
   /* Hero entrance animation */
   --animate-fade-up: fade-up 0.7s ease both;
