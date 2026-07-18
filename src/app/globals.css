@@ -81,3 +81,8 @@ body {
 @utility grid-project-row {
   grid-template-columns: 3.75rem 1fr 21.25rem;
 }
+
+/* Same, 320px right column (full project list) */
+@utility grid-project-row-compact {
+  grid-template-columns: 3.75rem 1fr 20rem;
+}

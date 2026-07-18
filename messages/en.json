@@ -63,12 +63,64 @@
     "heading": "Let's work together.",
     "subtitle": "I'm looking for a full-stack web development apprenticeship starting autumn 2026."
   },
+  "projectsPage": {
+    "metaTitle": "All projects — Lancelot Thoré",
+    "heading": "All projects",
+    "subtitle": "Coursework, personal projects and in-company work, from 2022 to today.",
+    "groups": {
+      "formation": "Coursework — BUT MMI, University of Limoges",
+      "personal": "Personal projects",
+      "company": "In-company — Groupe Axenco"
+    },
+    "companyNote": "In-company projects — code and visuals are not public; detailed walkthrough available in interviews.",
+    "githubLabel": "GitHub ↗",
+    "externalLinkLabel": "opens GitHub in a new tab",
+    "items": {
+      "lAgendary": {
+        "title": "L'Agendary",
+        "description": "Group event management web app: personal calendar, filtered search, JWT authentication, backoffice, private events with email invitations."
+      },
+      "dispoIntervenants": {
+        "title": "Lecturer availability manager",
+        "description": "Availability management for university lecturers: key-based access, admin dashboard, JSON import/export. Iterative development (21 iterations)."
+      },
+      "nintendo": {
+        "title": "Nintendo product page recreation",
+        "description": "Pixel-perfect recreation of the Stardew Valley page from the Nintendo store, responsive across desktop / tablet / mobile. A front-end precision exercise."
+      },
+      "robinLeRequin": {
+        "title": "M'T Dents — Robin le requin",
+        "description": "Educational app for children aged 3–6: tooth-brushing timer, learning cards, interactive quiz. Built from Figma mockups, designed for tablet and mobile."
+      },
+      "ecoQuest": {
+        "title": "Eco-Quest",
+        "description": "VR game built in a trio, set on a desert island: collect waste to clear each level, in support of an ecological message."
+      },
+      "tsudoi": {
+        "title": "Tsudoi (集い)",
+        "description": "A manga tracker for friends: reading log, micro-reviews, discovery through your circle. Currently in development."
+      },
+      "irminsul": {
+        "title": "Irminsul",
+        "description": "Discord bot for Genshin Impact info and builds: slash commands, data sync, automated tests and linting."
+      },
+      "axencoDomotique": {
+        "title": "Embedded home-automation app",
+        "description": "Embedded interface designed and built during my apprenticeship, from Figma prototyping to integration."
+      },
+      "axencoCms": {
+        "title": "Multi-CMS showcase websites",
+        "description": "Development and maintenance of websites for the group and its brands."
+      }
+    }
+  },
   "nav": {
     "projects": "Projects",
     "background": "Background",
     "skills": "Skills",
     "contact": "Contact",
-    "menuLabel": "Menu"
+    "menuLabel": "Menu",
+    "backToPortfolio": "← Back to portfolio"
   },
   "localeSwitcher": {
     "ariaLabel": "Switch to the French version"

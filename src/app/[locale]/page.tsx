@@ -1,4 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import Header from "@/components/header";
 import ProjectRow from "@/components/project-row";
 import Section from "@/components/section";
 import { Link } from "@/i18n/navigation";
@@ -18,6 +19,7 @@ export default async function Home({ params }: Props) {
 
   return (
     <>
+      <Header variant="home" />
       <main
         id="top"
         className="animate-fade-up px-6 pt-12 pb-8 md:px-16 md:pt-30 md:pb-22"
