@@ -137,7 +137,7 @@ export default async function Home({ params }: Props) {
           <div className="flex flex-col gap-9">
             <div>
               <p className="text-entry">
-                Master Architecture &amp; Développement d&apos;application
+                Master Architecture &amp; Développement Logiciel
               </p>
               <p className="mt-1.5 font-grotesk text-meta text-ink-muted">
                 {background("education.coda.meta")}
