@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Header from "@/components/header";
+import ObfuscatedEmailLink from "@/components/obfuscated-email-link";
 import ProjectRow from "@/components/project-row";
 import { projects, type ProjectGroup } from "@/data/projects";
 import { Link } from "@/i18n/navigation";
@@ -94,9 +95,7 @@ export default async function ProjectsPage({ params }: Props) {
           {nav("backToPortfolio")}
         </Link>
         <div className="flex gap-6 font-grotesk text-meta">
-          <a href="mailto:lancelot.thore@gmail.com">
-            lancelot.thore@gmail.com
-          </a>
+          <ObfuscatedEmailLink />
           <a href="https://github.com/LancelotThore">
             {t("githubLabel")}
           </a>
