@@ -1,5 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Header from "@/components/header";
+import ObfuscatedEmailLink from "@/components/obfuscated-email-link";
+import ObfuscatedPhone from "@/components/obfuscated-phone";
 import ProjectRow from "@/components/project-row";
 import Section from "@/components/section";
 import { Link } from "@/i18n/navigation";
@@ -32,12 +34,9 @@ export default async function Home({ params }: Props) {
           {hero("subtitle")}
         </p>
         <div className="mt-12 flex gap-4 font-grotesk text-body">
-          <a
-            href="mailto:lancelot.thore@gmail.com"
-            className="border border-ink bg-ink px-8 py-3.5 text-cream transition hover:opacity-85"
-          >
+          <ObfuscatedEmailLink className="border border-ink bg-ink px-8 py-3.5 text-cream transition hover:opacity-85">
             {hero("ctaContact")}
-          </a>
+          </ObfuscatedEmailLink>
           <a
             href="#projets"
             className="border border-ink px-8 py-3.5 transition hover:bg-ink hover:text-cream"
@@ -232,12 +231,7 @@ export default async function Home({ params }: Props) {
           {contact("subtitle")}
         </p>
         <div className="mt-12 flex flex-wrap gap-4 font-grotesk text-body">
-          <a
-            href="mailto:lancelot.thore@gmail.com"
-            className="bg-cream px-8 py-3.5 text-ink"
-          >
-            lancelot.thore@gmail.com
-          </a>
+          <ObfuscatedEmailLink className="bg-cream px-8 py-3.5 text-ink" />
           <a
             href="https://github.com/LancelotThore"
             className="border border-cream px-8 py-3.5"
@@ -254,7 +248,7 @@ export default async function Home({ params }: Props) {
         <div className="mt-22 flex flex-col gap-2 border-t border-divider-dark pt-7 font-grotesk text-label text-cream-muted sm:flex-row sm:justify-between">
           <span>© 2026 Lancelot Thoré</span>
           <span>Ligny-le-Ribault · Orléans, France</span>
-          <span>+33 6 02 63 18 37</span>
+          <ObfuscatedPhone />
         </div>
       </section>
     </>
