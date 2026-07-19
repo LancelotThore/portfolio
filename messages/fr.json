@@ -124,5 +124,12 @@
   },
   "localeSwitcher": {
     "ariaLabel": "Passer à la version anglaise"
+  },
+  "notFound": {
+    "metaTitle": "Page introuvable — Lancelot Thoré",
+    "code": "404",
+    "heading": "Page introuvable",
+    "message": "Cette page n'existe pas ou plus.",
+    "cta": "Retour à l'accueil"
   }
 }

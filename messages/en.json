@@ -124,5 +124,12 @@
   },
   "localeSwitcher": {
     "ariaLabel": "Switch to the French version"
+  },
+  "notFound": {
+    "metaTitle": "Page not found — Lancelot Thoré",
+    "code": "404",
+    "heading": "Page not found",
+    "message": "This page doesn't exist.",
+    "cta": "Back to home"
   }
 }
