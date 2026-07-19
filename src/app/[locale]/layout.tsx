@@ -3,6 +3,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Instrument_Serif, Space_Grotesk } from "next/font/google";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { routing } from "@/i18n/routing";
 import { siteUrl } from "@/lib/site";
 import "../globals.css";
@@ -69,6 +70,14 @@ export default async function LocaleLayout({ children, params }: Props) {
     >
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        {process.env.NODE_ENV === "production" && (
+          <Script
+            id="goatcounter"
+            src="https://gc.zgo.at/count.js"
+            data-goatcounter="https://lancelotthore.goatcounter.com/count"
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   );
