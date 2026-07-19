@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import ObfuscatedEmailLink from "@/components/obfuscated-email-link";
 import ObfuscatedPhone from "@/components/obfuscated-phone";
 import ProjectRow from "@/components/project-row";
+import Reveal from "@/components/reveal";
 import Section from "@/components/section";
 import { Link } from "@/i18n/navigation";
 
@@ -96,7 +97,8 @@ export default async function Home({ params }: Props) {
         </div>
       </Section>
 
-      <section
+      <Reveal
+        as="section"
         id="parcours"
         className="grid grid-cols-1 border-t border-ink md:grid-cols-2"
       >
@@ -158,7 +160,7 @@ export default async function Home({ params }: Props) {
             </div>
           </div>
         </div>
-      </section>
+      </Reveal>
 
       <Section id="competences">
         <h2 className="mb-12 text-section">{skills("heading")}</h2>
@@ -222,7 +224,8 @@ export default async function Home({ params }: Props) {
         </div>
       </Section>
 
-      <section
+      <Reveal
+        as="section"
         id="contact"
         className="border-t border-ink bg-ink px-6 py-16 text-cream md:px-16 md:py-24"
       >
@@ -250,7 +253,7 @@ export default async function Home({ params }: Props) {
           <span>Ligny-le-Ribault · Orléans, France</span>
           <ObfuscatedPhone />
         </div>
-      </section>
+      </Reveal>
     </>
   );
 }

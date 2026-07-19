@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Header from "@/components/header";
 import ObfuscatedEmailLink from "@/components/obfuscated-email-link";
 import ProjectRow from "@/components/project-row";
+import Reveal from "@/components/reveal";
 import { projects, type ProjectGroup } from "@/data/projects";
 import { Link } from "@/i18n/navigation";
 
@@ -63,7 +64,7 @@ export default async function ProjectsPage({ params }: Props) {
         const groupProjects = projects.filter((p) => p.group === group);
 
         return (
-          <div key={group} className="border-t border-ink p-6 md:p-16">
+          <Reveal key={group} className="border-t border-ink p-6 md:p-16">
             <p className="mb-8 font-grotesk text-label text-ink-muted uppercase">
               {t(`groups.${group}`)}
             </p>
@@ -86,7 +87,7 @@ export default async function ProjectsPage({ params }: Props) {
                 {t("companyNote")}
               </p>
             )}
-          </div>
+          </Reveal>
         );
       })}
 
