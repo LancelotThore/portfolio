@@ -13,7 +13,7 @@ export default function LocaleSwitcher() {
   return (
     <button
       type="button"
-      aria-label={t("ariaLabel")}
+      aria-label={`${target.toUpperCase()} — ${t("ariaLabel")}`}
       onClick={() => router.replace(pathname, { locale: target })}
       className="cursor-pointer border border-ink px-4 py-2 font-grotesk text-label tracking-widest uppercase transition-colors hover:bg-ink hover:text-cream"
     >
