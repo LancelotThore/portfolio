@@ -19,7 +19,7 @@ export default async function Header({ variant = "home" }: Props) {
 
   return (
     <header className="sticky top-0 z-20 flex h-21 items-center justify-between border-b border-ink bg-cream px-6 font-grotesk text-body md:px-16">
-      <Link href="/" className="shrink-0 font-bold tracking-logo">
+      <Link href="/" className="-ml-2 shrink-0 pl-2 font-bold tracking-logo">
         LT
       </Link>
       {variant === "home" ? (
