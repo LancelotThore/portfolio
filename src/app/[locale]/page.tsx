@@ -35,9 +35,12 @@ export default async function Home({ params }: Props) {
           {hero("subtitle")}
         </p>
         <div className="mt-12 flex gap-4 font-grotesk text-body">
-          <ObfuscatedEmailLink className="border border-ink bg-ink px-8 py-3.5 text-cream transition hover:opacity-85">
+          <a
+            href="#contact"
+            className="border border-ink bg-ink px-8 py-3.5 text-cream transition hover:opacity-85"
+          >
             {hero("ctaContact")}
-          </ObfuscatedEmailLink>
+          </a>
           <a
             href="#projets"
             className="border border-ink px-8 py-3.5 transition hover:bg-ink hover:text-cream"
