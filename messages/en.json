@@ -14,7 +14,6 @@
     "heading": "Projects",
     "note": "Other work (embedded Python app, CMS websites, Figma prototypes) was carried out in-company at Groupe Axenco — details on request.",
     "cta": "All projects →",
-    "externalLinkLabel": "opens GitHub in a new tab",
     "items": {
       "dispoIntervenants": {
         "title": "Lecturer availability manager",
@@ -73,8 +72,6 @@
       "company": "In-company — Groupe Axenco"
     },
     "companyNote": "In-company projects — code and visuals are not public; detailed walkthrough available in interviews.",
-    "githubLabel": "GitHub ↗",
-    "externalLinkLabel": "opens GitHub in a new tab",
     "items": {
       "lAgendary": {
         "title": "L'Agendary",
@@ -114,13 +111,82 @@
       }
     }
   },
+  "projectDetail": {
+    "aboutLabel": "About the project",
+    "yearLabel": "Year",
+    "contextLabel": "Context",
+    "roleLabel": "Role",
+    "stackLabel": "Stack",
+    "screenshotsLabel": "Screenshots",
+    "viewLiveCta": "View live project ↗",
+    "githubCta": "GitHub ↗",
+    "privateLabel": "Private repo — demo on request",
+    "prevLabel": "Previous project",
+    "nextLabel": "Next project",
+    "groupLabels": {
+      "formation": "Coursework — BUT MMI",
+      "personal": "Personal project"
+    },
+    "items": {
+      "lAgendary": {
+        "name": "L'Agendary",
+        "tagline": "An event management web app built for groups.",
+        "description": "L'Agendary lets you create and manage events, public or private, and find them through filtered search.\n\nEach user has a personal calendar gathering their events and invitations. Private events work through email invitations. A backoffice handles account and content administration.\n\nGroup project: Next.js front end, Symfony API, MySQL database, all containerised with Docker. JWT authentication.",
+        "context": "Group project, BUT MMI",
+        "role": "Full-stack developer"
+      },
+      "dispoIntervenants": {
+        "name": "Lecturer availability manager",
+        "tagline": "Managing university lecturer availability, without friction.",
+        "description": "Each lecturer enters their availability via a personal access key, no account needed. An admin dashboard gives programme managers the full picture.\n\nThe app handles JSON data import and export. Development was iterative, across 21 documented iterations.",
+        "context": "Solo project, BUT MMI",
+        "role": "Full-stack developer"
+      },
+      "nintendo": {
+        "name": "Nintendo product page",
+        "tagline": "Pixel-perfect recreation of the Stardew Valley page from the Nintendo store.",
+        "description": "A front-end precision exercise: faithfully recreating the Stardew Valley product page from the Nintendo store across its three responsive layouts — desktop, tablet and mobile.\n\nMeticulous integration work: grids, typography, carousels and interactive states, as close to the original as possible. For study purposes.",
+        "context": "Solo project, BUT MMI",
+        "role": "Front-end developer"
+      },
+      "robinLeRequin": {
+        "name": "M'T Dents — Robin the shark",
+        "tagline": "Teaching 3–6 year-olds to brush their teeth, playfully.",
+        "description": "Educational app for children aged 3–6: a tooth-brushing timer led by Robin the shark, learning cards and an interactive quiz.\n\nBuilt from Figma mockups, designed for tablet and mobile, with special care for toddler accessibility (large touch targets, visual feedback).",
+        "context": "Group project, BUT MMI",
+        "role": "Front-end developer"
+      },
+      "ecoQuest": {
+        "name": "Eco-Quest",
+        "tagline": "A VR game on a desert island, in support of an ecological message.",
+        "description": "Virtual reality game built in a trio: the player explores a desert island and must collect the waste polluting it to clear each level.\n\nBuilt with A-Frame (WebVR), playable in a headset or a browser. The gameplay carries a message: raising awareness of pollution in natural environments.",
+        "context": "Trio project, BUT MMI",
+        "role": "Developer"
+      },
+      "tsudoi": {
+        "name": "Tsudoi (集い)",
+        "tagline": "A manga reading tracker to share with friends.",
+        "description": "Tsudoi (Japanese for 'gathering') is a manga reading tracker built for circles of friends: reading log, micro-reviews, and discovery through what your circle reads.\n\nCurrently in development — Next.js and Supabase (auth, database, realtime).",
+        "context": "Personal project, in progress",
+        "role": "Design & development"
+      },
+      "irminsul": {
+        "name": "Irminsul",
+        "tagline": "A Discord bot for Genshin Impact info and builds.",
+        "description": "Irminsul answers slash commands with Genshin Impact character info and builds, with game data synchronisation.\n\nRun with real engineering rigour: strict TypeScript, automated tests, linting, continuous integration.",
+        "context": "Personal project",
+        "role": "Design & development"
+      }
+    }
+  },
   "nav": {
     "projects": "Projects",
     "background": "Background",
     "skills": "Skills",
     "contact": "Contact",
     "menuLabel": "Menu",
-    "backToPortfolio": "← Back to portfolio"
+    "backToPortfolio": "← Back to portfolio",
+    "backToProjects": "← All projects"
   },
   "localeSwitcher": {
     "ariaLabel": "Switch to the French version"
