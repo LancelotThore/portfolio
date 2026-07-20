@@ -1,20 +1,20 @@
+import { Link } from "@/i18n/navigation";
+
 type Props = {
   index: string;
+  urlSlug?: string;
   title: string;
   description: string;
   stack: string[];
-  href?: string;
-  externalLinkLabel?: string;
   size?: "featured" | "list";
 };
 
 export default function ProjectRow({
   index,
+  urlSlug,
   title,
   description,
   stack,
-  href,
-  externalLinkLabel,
   size = "featured",
 }: Props) {
   const gridClass =
@@ -27,17 +27,7 @@ export default function ProjectRow({
     <>
       <span className="font-grotesk text-label text-ink-muted">{index}</span>
       <div>
-        <p className={titleClass}>
-          {title}
-          {href && (
-            <span
-              aria-label={externalLinkLabel}
-              className="ml-2 font-grotesk text-meta text-ink-muted"
-            >
-              ↗
-            </span>
-          )}
-        </p>
+        <p className={titleClass}>{title}</p>
         <p className="mt-2 font-grotesk text-body text-ink-soft md:max-w-160">
           {description}
         </p>
@@ -48,11 +38,11 @@ export default function ProjectRow({
     </>
   );
 
-  if (href) {
+  if (urlSlug) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={rowClassName}>
+      <Link href={`/projets/${urlSlug}`} className={rowClassName}>
         {content}
-      </a>
+      </Link>
     );
   }
 

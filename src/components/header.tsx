@@ -4,7 +4,7 @@ import LocaleSwitcher from "./locale-switcher";
 import MobileNav from "./mobile-nav";
 
 type Props = {
-  variant?: "home" | "projects";
+  variant?: "home" | "projects" | "project-detail";
 };
 
 export default async function Header({ variant = "home" }: Props) {
@@ -30,9 +30,13 @@ export default async function Header({ variant = "home" }: Props) {
             </a>
           ))}
         </nav>
-      ) : (
+      ) : variant === "projects" ? (
         <Link href="/" className="flex-1 text-center">
           {t("backToPortfolio")}
+        </Link>
+      ) : (
+        <Link href="/projets" className="flex-1 text-center">
+          {t("backToProjects")}
         </Link>
       )}
       <div className="flex shrink-0 items-center gap-3">

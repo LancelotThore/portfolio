@@ -57,6 +57,7 @@ export default async function Home({ params }: Props) {
         <div className="flex flex-col border-b border-divider">
           <ProjectRow
             index="01"
+            urlSlug="l-agendary"
             title="L'Agendary"
             description={
               locale === "fr"
@@ -64,24 +65,20 @@ export default async function Home({ params }: Props) {
                 : "Event management web app: creation, filtered search, personal calendar, JWT authentication, admin backoffice. Group project, containerised with Docker."
             }
             stack={["Next.js", "Symfony", "MySQL", "Docker"]}
-            href="https://github.com/LancelotThore/l-agendary"
-            externalLinkLabel={projects("externalLinkLabel")}
           />
           <ProjectRow
             index="02"
+            urlSlug="projet-dispo-intervenants"
             title={projects("items.dispoIntervenants.title")}
             description={projects("items.dispoIntervenants.description")}
             stack={["Next.js", "TypeScript", "PostgreSQL", "Docker"]}
-            href="https://github.com/LancelotThore/projet-dispo-intervenants"
-            externalLinkLabel={projects("externalLinkLabel")}
           />
           <ProjectRow
             index="03"
+            urlSlug="nintendo-stardew-valley"
             title={projects("items.nintendo.title")}
             description={projects("items.nintendo.description")}
             stack={["Next.js", "React", "CSS responsive"]}
-            href="https://github.com/LancelotThore/nintendo-stardew-valley"
-            externalLinkLabel={projects("externalLinkLabel")}
           />
         </div>
         <div className="mt-7 flex flex-col items-start gap-4 md:flex-row md:items-baseline md:justify-between">
