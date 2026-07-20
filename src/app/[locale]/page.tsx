@@ -234,12 +234,16 @@ export default async function Home({ params }: Props) {
           <ObfuscatedEmailLink className="bg-cream px-8 py-3.5 text-ink" />
           <a
             href="https://github.com/LancelotThore"
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-cream px-8 py-3.5"
           >
             GitHub
           </a>
           <a
             href="https://www.linkedin.com/in/lancelot-thor%C3%A9"
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-cream px-8 py-3.5"
           >
             LinkedIn

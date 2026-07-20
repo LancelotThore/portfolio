@@ -12,7 +12,13 @@ export default async function SiteFooter() {
       </Link>
       <div className="flex gap-6 font-grotesk text-meta">
         <ObfuscatedEmailLink />
-        <a href="https://github.com/LancelotThore">GitHub ↗</a>
+        <a
+          href="https://github.com/LancelotThore"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub ↗
+        </a>
       </div>
     </footer>
   );
